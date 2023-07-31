@@ -1,0 +1,116 @@
+.reviews {
+  background-color: $akcent-color;
+  padding: 220px 0;
+  &__container {
+
+  }
+  @include medium-tablet {
+    padding: 100px 0;
+  }
+  @include mobile {
+    padding: 50px 0;
+  }
+}
+
+.reviews-slider {
+  position: relative;
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__body {
+    max-width: 785px;
+    text-align: center;
+    @include medium-tablet {
+      max-width: 500px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__icon {
+    display: inline;
+    margin-bottom: 34px;
+    @include medium-tablet {
+      width: 50px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    color: $red-color;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 111.111%;
+    margin-bottom: 20px;
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    color: $text-light-color;
+    line-height: 250%;
+    margin-bottom: 40px;
+    @include medium-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__aftor {
+    margin: 0;
+    color: $red-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 166.667%;
+    letter-spacing: 5.88px;
+    text-transform: uppercase;
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+}
+
+
+.slider-button-prev,
+.slider-button-next {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  @include medium-mobile {
+    top: 25px;
+  }
+}
+
+.slider-button-prev {
+  left: -22px;
+}
+
+.slider-button-next {
+  right: -22px;
+}
+
+.arrow-prew,
+.arrow-next {
+  fill: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.arrow-prew {
+  stroke: $text-light-color;
+}
+
+.arrow-next {
+  stroke: $red-color;
+  transform: rotate(180deg);
+}
