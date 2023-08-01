@@ -1,9 +1,11 @@
 .dish-day {
   padding-top: 80px;
   padding-bottom: 90px;
+
   &__container {
     display: flex;
     column-gap: 34px;
+
     @include tablet {
       flex-direction: column;
       gap: 30px 0;
@@ -15,9 +17,10 @@
   }
 
   &__day {
-    padding-bottom: 20px;
     border-bottom: 1px solid $border-color;
-    &:not(:first-child){
+    padding-bottom: 20px;
+
+    &:not(:first-child) {
       margin-top: 20px;
     }
   }
@@ -26,6 +29,7 @@
     display: flex;
     column-gap: 22px;
   }
+
   @include mobile {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -34,10 +38,11 @@
 
 .day {
   &__title {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 133.333%;
     margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 133.333%;
+
     @include tablet {
       font-size: 18px;
     }
@@ -46,13 +51,15 @@
   &__bottom {
     display: flex;
     align-items: center;
-    font-size: 18px;
     font-weight: 400;
+    font-size: 18px;
     line-height: 177.778%;
+
     img {
-      object-fit: none;
       padding: 0 12px;
+      object-fit: none;
     }
+
     @include tablet {
       font-size: 14px;
     }
@@ -60,6 +67,7 @@
 
   &__subtitle {
     margin: 0;
+
     @include medium-mobile {
       min-width: 120px;
     }
@@ -72,13 +80,15 @@
 
 .foto-day {
   position: relative;
+
   &__elem {
     position: absolute;
-    top: 49px;
     left: 96px;
+    top: 49px;
+    border: 2px solid $red-color;
     width: calc(100% - 196px);
     height: calc(100% - 135px);
-    border: 2px solid $red-color;
+
     @include medium-mobile {
       display: none;
     }
@@ -87,6 +97,7 @@
   &__image {
     position: relative;
     z-index: 1;
+
     @include medium-mobile {
       width: 100%;
     }
@@ -94,19 +105,19 @@
 
   &__image--bottom {
     margin-top: 152px;
+
     @include medium-mobile {
       margin-top: 0;
     }
   }
+
   @include tablet {
     justify-content: center;
   }
+
   @include medium-mobile {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
   }
 }
-
-
-

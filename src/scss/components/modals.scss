@@ -1,10 +1,10 @@
 .form {
-
   &__title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 183.333%;
     margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 183.333%;
+
     @include mobile {
       font-size: 30px;
     }
@@ -15,15 +15,16 @@
     column-gap: 19px;
     margin-bottom: 20px;
     width: 100%;
-    @include mobile{
+
+    @include mobile {
       flex-direction: column;
     }
   }
 
   &__name {
     display: block;
-    line-height: 200%;
     margin-bottom: 10px;
+    line-height: 200%;
   }
 
   &__label {
@@ -31,28 +32,31 @@
   }
 
   &__input {
-    width: 100%;
-    border: 1px solid #CCC;
+    border: 1px solid #ccc;
     padding: 16px 28px;
+    width: 100%;
+
     &::placeholder {
-      color: #808080;
       font-size: 16px;
       line-height: 150%;
+      color: #808080;
     }
+
     &.just-validate-error-field {
-      border: 1px solid red;
+      border: 1px solid $red-color;
     }
   }
 
   &__textarea {
+    margin-bottom: 20px;
     width: 100%;
     min-height: 125px;
-    margin-bottom: 20px;
   }
 
   &__btn {
     padding: 38px 104px;
-    @include mobile{
+
+    @include mobile {
       width: 100%;
     }
   }

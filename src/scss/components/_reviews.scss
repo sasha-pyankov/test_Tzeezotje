@@ -1,12 +1,11 @@
 .reviews {
-  background-color: $akcent-color;
   padding: 220px 0;
-  &__container {
+  background-color: $akcent-color;
 
-  }
   @include medium-tablet {
     padding: 100px 0;
   }
+
   @include mobile {
     padding: 50px 0;
   }
@@ -14,6 +13,7 @@
 
 .reviews-slider {
   position: relative;
+
   &__slide {
     display: flex;
     flex-direction: column;
@@ -24,9 +24,11 @@
   &__body {
     max-width: 785px;
     text-align: center;
+
     @include medium-tablet {
       max-width: 500px;
     }
+
     @include mobile {
       max-width: 100%;
     }
@@ -35,18 +37,20 @@
   &__icon {
     display: inline;
     margin-bottom: 34px;
+
     @include medium-tablet {
-      width: 50px;
       margin-bottom: 20px;
+      width: 50px;
     }
   }
 
   &__title {
-    color: $red-color;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 111.111%;
     margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 111.111%;
+    color: $red-color;
+
     @include mobile {
       font-size: 28px;
     }
@@ -54,9 +58,10 @@
 
   &__descr {
     margin: 0;
-    color: $text-light-color;
-    line-height: 250%;
     margin-bottom: 40px;
+    line-height: 250%;
+    color: $text-light-color;
+
     @include medium-tablet {
       margin-bottom: 20px;
     }
@@ -64,28 +69,29 @@
 
   &__aftor {
     margin: 0;
-    color: $red-color;
-    font-size: 24px;
     font-weight: 600;
+    font-size: 24px;
     line-height: 166.667%;
     letter-spacing: 5.88px;
     text-transform: uppercase;
+    color: $red-color;
+
     @include mobile {
       font-size: 20px;
     }
   }
 }
 
-
 .slider-button-prev,
 .slider-button-next {
   position: absolute;
-  z-index: 5;
   top: 50%;
-  transform: translateY(-50%);
+  z-index: 5;
   width: 70px;
   height: 70px;
+  transform: translateY(-50%);
   cursor: pointer;
+
   @include medium-mobile {
     top: 25px;
   }
@@ -101,9 +107,9 @@
 
 .arrow-prew,
 .arrow-next {
-  fill: transparent;
   width: 100%;
   height: 100%;
+  fill: transparent;
 }
 
 .arrow-prew {
